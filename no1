@@ -1,0 +1,16 @@
+f=.96
+w=390
+j=1200
+c=760
+d=.98
+total_amount=(7*w)+(19*j)+(5*c)
+paid=total_amount*d
+print(paid)
+if paid>30000:
+  new_amount=paid*f
+  print("New amount : ",new_amount)
+  re=paid-new_amount
+  print("Reimbursement amount:",re)
+else:
+  new_amount=paid
+print("no Additional discount available")
